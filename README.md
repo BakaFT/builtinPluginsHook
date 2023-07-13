@@ -1,6 +1,6 @@
 # builtinPluginsHook
 
-This is a [Pengu Loader](pengu.lol) Plugin
+This is a [Pengu Loader](https://pengu.lol) Plugin
 
 This plugin allows you to hook any `Riot Client Plguin` loaded into LeagueClient.
 
