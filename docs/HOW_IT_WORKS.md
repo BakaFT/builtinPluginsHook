@@ -10,7 +10,7 @@ RCPs are loaded when launching LCU, that's when we hook them.
 
 Basically every Riot Client Plugin(rcp) is loaded by`rcp-fe-plugin-runner`through `CustomEvent `.
 
-From `rcp-fe-plugin-runner.js`we can guess that the steps to load a RCP:
+From `rcp-fe-plugin-runner.js`we can guess the steps to load a RCP:
 
 1. Announce
 2. Preinit
@@ -20,7 +20,7 @@ From `rcp-fe-plugin-runner.js`we can guess that the steps to load a RCP:
 
 1. Find all RCPs from game folder, resolve the dependency graph(Loading order,which is important,talk later), and ready to announce them.
 
-2. Append the javascript file of a RCP to `<head/>` node of HTML, then it's preset `onload` function will be triggered
+2. Append the javascript file of a RCP to `<head/>` node of HTML, then it's preset `onload` function will be triggered when creating.
 
    (see `_addChildrenToHead` of `rcp-fe-plugin-runner.js`)
 
@@ -64,8 +64,6 @@ From `rcp-fe-plugin-runner.js`we can guess that the steps to load a RCP:
     Be careful. The first `t` is event itself, see [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#the_event_listener_callback) to get to know why
 
    The second` t` is the context of this RCP, you can see its schema [here](./kick_context.json)
-
-6. Now wait for the DOM node of RCP creates and trigger `onload` event. 
 
 ## Preinit
 
