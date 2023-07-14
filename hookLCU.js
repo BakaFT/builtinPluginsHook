@@ -1,7 +1,8 @@
 import { wrap_method, BuiltinPlugin } from './util.js'
-import { PLUGIN_HOOKS } from './pluginHooks/pluginHooks.js'
+import RCP_HOOKS from './pluginHooks/pluginHooks.js'
 
 const hookBuiltinPlugin = () => {
+    window.builtPlugins = window.builtPlugins || {}
     wrap_method(document, "dispatchEvent", function (original, [event]) {
         if (!event.type.startsWith("riotPlugin.announce:")) {
             original(event)
@@ -18,7 +19,8 @@ const hookBuiltinPlugin = () => {
                                 result.then(
                                     api => {
                                         const pluginName = event.type.split(":")[1]
-                                        PLUGIN_HOOKS.forEach(function (pluginHook) {
+                                        window.builtPlugins[pluginName] = api
+                                        RCP_HOOKS.forEach(function (pluginHook) {
                                             if (pluginHook.pluginName === pluginName) {
                                                 wrap_method(api, pluginHook.target, pluginHook.hook)
                                             }

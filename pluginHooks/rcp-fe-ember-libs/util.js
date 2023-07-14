@@ -15,7 +15,6 @@ export const hookEmber = (Ember) => {
                     })
                     if (EMBER_COMPONENT_NEED_PRINT.includes(hook.matcher)) {
                         console.log(hook.matcher, res.proto())
-                        window.res= res
                     }
                 }
             });
