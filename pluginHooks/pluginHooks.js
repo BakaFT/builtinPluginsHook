@@ -1,20 +1,7 @@
-import { hookEmber } from "./rcp-fe-ember-libs/entry.js"
-
-export const PLUGIN_HOOKS = [
-    {
-        pluginName: "rcp-fe-ember-libs",
-        target: "getEmber",
-        hook: function (original, args) {
-            const res = original(...args)
-            return res.then(
-                Ember => {
-                    hookEmber(Ember)
-                    return Ember
-                }
-            )
-        }
-
-    }
+import RCP_FE_EMBER_LIBS_HOOKS from './rcp-fe-ember-libs/hooks.js'
+import RCP_FE_LOL_PARTIES_HOOKS from './rcp-fe-lol-parties/hooks.js'
+// All RCP hooks should be exported here
+export default [
+    ...RCP_FE_EMBER_LIBS_HOOKS,
+    ...RCP_FE_LOL_PARTIES_HOOKS
 ]
-
-
