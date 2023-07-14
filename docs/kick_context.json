@@ -1,0 +1,174 @@
+{
+    "context": {
+        "graph": {},
+        "loaders": {
+            "rcp-fe-common-libs": {},
+            "rcp-fe-lol-l10n": {},
+            "rcp-fe-audio": {},
+            "rcp-fe-lol-lock-and-load": {},
+            "rcp-fe-lol-typekit": {},
+            "rcp-fe-lol-uikit": {},
+            "rcp-fe-rpcs": {},
+            "rcp-fe-gdp-live": {},
+            "rcp-fe-ember-libs": {},
+            "rcp-fe-lol-shared-components": {},
+            "rcp-fe-lol-navigation": {},
+            "rcp-fe-lol-social": {},
+            "rcp-fe-lol-champion-statistics": {},
+            "rcp-fe-lol-event-shop": {},
+            "rcp-fe-lol-parties": {},
+            "rcp-fe-lol-profiles": {},
+            "rcp-fe-lol-esports-spectate": {},
+            "rcp-fe-lol-tft-team-planner": {},
+            "rcp-fe-lol-champ-select": {},
+            "rcp-fe-lol-skins-picker": {},
+            "rcp-fe-lol-premade-voice": {},
+            "rcp-fe-lol-honeyfruit-account-claiming": {},
+            "rcp-fe-lol-champion-details": {},
+            "rcp-fe-lol-postgame": {},
+            "rcp-fe-lol-career-stats": {},
+            "rcp-fe-lol-clash": {},
+            "rcp-fe-lol-highlights": {},
+            "rcp-fe-lol-honor": {},
+            "rcp-fe-lol-kickout": {},
+            "rcp-fe-lol-leagues": {},
+            "rcp-fe-lol-static-assets": {},
+            "rcp-fe-lol-tft-troves": {}
+        },
+        "socket": {
+            "_dispatcher": {
+                "_handlersRoot": {
+                    "riotclient": {
+                        "pre-shutdown": {
+                            "begin": {}
+                        }
+                    },
+                    "lol-platform-config": {
+                        "v1": {}
+                    },
+                    "fe": {},
+                    "data-store": {},
+                    "lol-settings": {
+                        "v2": {
+                            "account": {
+                                "LCUPreferences": {}
+                            }
+                        }
+                    },
+                    "lol-game-data": {},
+                    "lol-gameflow": {
+                        "v1": {}
+                    },
+                    "lol-ranked": {},
+                    "lol-login": {
+                        "v1": {}
+                    },
+                    "lol-replays": {},
+                    "lol-premade-voice": {},
+                    "lol-summoner": {
+                        "v1": {}
+                    },
+                    "system": {},
+                    "lol-game-settings": {},
+                    "lol-statstones": {},
+                    "telemetry": {},
+                    "lol-simple-dialog-messages": {},
+                    "lol-rso-auth": {},
+                    "lol-service-status": {},
+                    "lol-shutdown": {},
+                    "lol-pft": {},
+                    "lol-clash": {},
+                    "lol-kr-shutdown-law": {},
+                    "lol-player-behavior": {},
+                    "patcher": {},
+                    "lol-honor-v2": {},
+                    "lol-challenges": {},
+                    "lol-matchmaking": {},
+                    "crash-reporting": {},
+                    "lol-tft": {},
+                    "lol-inventory": {},
+                    "lol-champions": {},
+                    "lol-perks": {},
+                    "lol-event-shop": {
+                        "v1": {}
+                    },
+                    "lol-yourshop": {},
+                    "lol-publishing-content": {},
+                    "lol-player-messaging": {},
+                    "lol-missions": {},
+                    "lol-pre-end-of-game": {},
+                    "lol-rewards": {},
+                    "lol-loot": {},
+                    "lol-rms": {},
+                    "lol-lobby": {},
+                    "lol-maps": {},
+                    "lol-game-queues": {},
+                    "lol-tft-team-planner": {},
+                    "lol-chat": {},
+                    "lol-champ-select": {},
+                    "lol-end-of-game": {},
+                    "lol-spectator": {},
+                    "lol-store": {},
+                    "plugin-manager": {},
+                    "lol-honeyfruit": {},
+                    "lol-client-config": {},
+                    "lol-leaver-buster": {},
+                    "entitlements": {},
+                    "lol-regalia": {},
+                    "player-notifications": {},
+                    "lol-seasons": {},
+                    "process-control": {},
+                    "lol-highlights": {},
+                    "lol-kickout": {},
+                    "anti-addiction": {},
+                    "lol-career-stats": {},
+                    "lol-collections": {},
+                    "lol-catalog": {},
+                    "lol-loyalty": {}
+                }
+            },
+            "_websocket": {},
+            "_endpoint": "wss://riot:EJDVYzXiRkt95S6oRZk5yA@127.0.0.1:64511/",
+            "_connected": true,
+            "_sendQueue": [],
+            "_resolvers": {},
+            "_evts": {},
+            "_wampSessionId": "b21cf3c6",
+            "_wampProtocolVersion": 1,
+            "_wampServerIdentity": "WAMP-1.0-RiotRemoting"
+        },
+        "telemetry": {
+            "_enabled": false,
+            "_listeners": [],
+            "_eventQueue": []
+        },
+        "basePattern": "/fe/$shortname",
+        "pluginLoader": {
+            "telemetry": {
+                "_enabled": false,
+                "_listeners": [],
+                "_eventQueue": []
+            },
+            "lastPluginHasLoadedPromise": {}
+        }
+    },
+    "importDocument": {
+        "location": {
+            "ancestorOrigins": {},
+            "href": "https://127.0.0.1:64511/index.html",
+            "origin": "https://127.0.0.1:64511",
+            "protocol": "https:",
+            "host": "127.0.0.1:64511",
+            "hostname": "127.0.0.1",
+            "port": "64511",
+            "pathname": "/index.html",
+            "search": "",
+            "hash": ""
+        },
+        "_$DX_DELEGATE": {},
+        "isElementsRegistered": true,
+        "partiesElementsRegistered": true,
+        "premadeVoiceElementsRegistered": true
+    },
+    "pluginName": "rcp-fe-lol-kickout"
+}
