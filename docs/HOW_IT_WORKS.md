@@ -73,7 +73,7 @@ WIP
 
 WIP
 
-# What we do
+## What we do
 
 
    1. We replace `document.dispatchEvent`with out own version (see`hookLCU.js` Line 5) to catch `riotPlugin.announce:` events before they were dispatched.
