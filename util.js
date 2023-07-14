@@ -9,6 +9,7 @@ export function wrap_method(container, name, replacement) {
         return replacement.call(this, (...a) => old && old.apply(this, a), args);
     };
     container[name][WRAPPED] = true;
+    console.log("wrap_method", container, name);
 }
 
 export class BuiltinPlugin {

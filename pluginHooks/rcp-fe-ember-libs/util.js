@@ -7,7 +7,7 @@ export const hookEmber = (Ember) => {
         const name = args.filter(x => (typeof x === "object") && x.classNames && Array.isArray(x.classNames)).map(x => x.classNames.join(" "));
         if (name.length) {
             EMBER_COMPONENT_HOOKS.filter(x => x.matcher === name[0]).forEach(hook => {
-                const Mixin = hook.fun(Ember, args);
+                const Mixin = hook.mixin(Ember, args);
                 if (Mixin) {
                     res = res.extend(Mixin);
                     hook.wraps.forEach(wrap => {
@@ -15,7 +15,6 @@ export const hookEmber = (Ember) => {
                     })
                     if (EMBER_COMPONENT_NEED_PRINT.includes(hook.matcher)) {
                         console.log(hook.matcher, res.proto())
-                        window.res= res
                     }
                 }
             });
