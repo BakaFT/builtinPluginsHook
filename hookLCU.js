@@ -19,7 +19,7 @@ const hookBuiltinPlugin = () => {
                                 result.then(
                                     api => {
                                         const pluginName = event.type.split(":")[1]
-                                        window.builtPlugins[pluginName] = api
+                                        window.builtinPlugins[pluginName] = api
                                         RCP_HOOKS.forEach(function (pluginHook) {
                                             if (pluginHook.pluginName === pluginName) {
                                                 wrap_method(api, pluginHook.target, pluginHook.hook)
