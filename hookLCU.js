@@ -2,7 +2,7 @@ import { wrap_method, BuiltinPlugin } from './util.js'
 import RCP_HOOKS from './pluginHooks/pluginHooks.js'
 
 const hookBuiltinPlugin = () => {
-    window.builtPlugins = window.builtPlugins || {}
+    window.builtinPlugins = window.builtinPlugins || {}
     wrap_method(document, "dispatchEvent", function (original, [event]) {
         if (!event.type.startsWith("riotPlugin.announce:")) {
             original(event)
